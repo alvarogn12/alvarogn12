@@ -1,21 +1,20 @@
+https://portugol.dev/#share=mh713cs
 programa {
   funcao inicio() {
-    
-    real m1,m2,m3,media_aritmetica
-
-    escreva( "informe a 1° nota: \n")
-    leia(m1)
-
-    escreva( "informe a 2° nota: \n")
-    leia(m2)
-
-    escreva( "informe a 3° nota: \n")
-    leia(m3)   
-
-    media_aritmetica = (m1+m2+m3)/3
-
-    escreva("a média é ", media_aritmetica)
-
-
+  //declaração de variaveis
+  real n1,n2,n3,n4,mediaaritmedia
+  //entrada de dados
+  escreva("informe a 1 nota")
+  leia(n1)
+  escreva("informe a 2 nota")
+  leia(n2)
+  escreva("informe a 3 nota")
+  leia(n3)
+  escreva("informe a 4 nota")
+  leia(n4)
+  //processamento
+  mediaaritmedia=(n1+n2+n3+n4)/4
+  //saida de dados
+  escreva("a media aritmetica e",mediaaritmedia)
   }
 }
