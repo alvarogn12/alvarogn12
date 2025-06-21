@@ -1,0 +1,111 @@
+Questão 6
+
+programa {
+  funcao inicio() {
+    inteiro x, y, troca
+    //entrada de dados
+    escreva("Informe o valor de x: ")
+    leia(x)
+    escreva("Informe o valor de y: ")
+    leia(y)
+    //processamento 
+    escreva("Valores de x e y antes da troca são: ", x," e ", y)
+   
+
+    troca = x
+    x = y
+    y = troca
+    //Saída de dados 
+    escreva(" \n Os valores de x e y depois da troca são: \n")
+    escreva("X é: ", x,"\n")
+    escreva("Y é: ", y)
+  }
+}
+
+Questão 7
+
+programa {
+  funcao inicio() {
+    real raio, comprimento, diametro ,pi
+    const real pi = 3.14
+
+    escreva("Digite o valor do raio da circunferência: ")
+    leia(raio)
+
+    const real diametro = 2 * raio
+    const real comprimento= 2 * pi * raio
+    const real area= pi* (raio * raio)
+  
+
+  escreva("O diâmetro é: ", diametro, "\n")
+  escreva("A área é: ", area, "\n")
+  escreva("O comprimento é: ", comprimento, "\n")
+  }
+}
+
+Qustão 8
+
+programa {
+  funcao inicio() {
+    real fahrenheit, grau_celsius
+
+    escreva("Qual a temperatura em graus celsius: ")
+    leia(grau_celsius)
+
+    fahrenheit = (grau_celsius * 1.8) + 32 
+
+    escreva("Temperatura em  celsius: \n",grau_celsius)
+    escreva("\nTemperatura transformada em fahrenheit: \n",fahrenheit)
+  }
+
+Questão 9
+
+programa {
+  funcao inicio() {
+   inteiro numero, centena, dezena, unidade, numero_invertido 
+
+
+    escreva("Digite um número inteiro positivo de três dígitos: ")
+    leia(numero)
+
+    // Verifica se o número tem três dígitos
+    se (numero < 100 ou numero > 999)
+        escreva("Número inválido! Deve ter três dígitos.")
+    senao
+        // Separa os dígitos
+        centena = numero / 100
+        dezena = (numero % 100) / 10
+        unidade = numero % 10
+
+        
+        numero_invertido = (unidade * 100) + (dezena * 10) + centena
+
+        
+        escreva("Número lido: ", numero, "\n")
+        escreva("Número gerado (invertido): ", numero_invertido, "\n")
+   
+
+
+
+  }
+}
+
+Questao 10 
+
+programa {
+    funcao inicio() {
+        real premio_total, premio1, premio2, premio3
+
+        premio_total = 780000
+
+        
+        premio1 = premio_total * 0.46
+        premio2 = premio_total * 0.32
+        premio3 = premio_total - premio1 - premio2
+
+        
+        escreva("O primeiro ganhador recebera: R$ ", premio1, "\n")
+        escreva("O segundo ganhador recebera: R$ ", premio2, "\n")
+        escreva("O terceiro ganhador recebera: R$ ", premio3, "\n")
+    }
+}
