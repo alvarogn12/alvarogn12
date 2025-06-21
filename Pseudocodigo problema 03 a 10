@@ -1,0 +1,164 @@
+Questão 3
+
+INÍCIO 
+   //declaração de variáveis 
+    caracter:nome_aluno;
+    real:n1, n2, n3, n4, media ;
+    // entrada de dados 
+    escreva ("Escreva seu nome: ");
+    leia(nome_aluno);
+    escreva("Nota 1: ");
+    leia(n1);
+    escreva("Nota 2: ");
+    leia(n2);
+    escreva("Nota 3: ");
+    leia(n3);
+    escreva("Nota 4: ");
+    leia(n4);
+    //processamento 
+    media = (n1 + n2 + n3 + n4)/4;
+    //Saída de dados
+    escreva("A média do aluno ", nome_aluno," é: ",media);
+FIM
+
+Questão 4
+
+inicio
+    // declaração de variáveis 
+    real: m1, m2, m3, media;
+    //entrada de dados 
+    escreva("Valor gasto no primeiro mês: ");
+    leia(m1);
+    escreva("Valor gasto no segundo mês: ");
+    leia(m2);
+    escreva("Valor gasto no terceiro mês: ");
+    leia(m3);
+    //processamento
+    media = (m1 + m2 + m3)/3;
+    //saída de dados
+    escreva("A média de gastos nos 3 meses e de: ", media);
+FIM
+
+Questão 5
+
+inicio
+    //declaração de variáveis 
+    real:altura, peso_ideal;
+    caracter: nome;
+    // constantes
+    constante real k = 72.7;
+    constante inteiro b = 58;
+    //entrada de dados 
+    escreva("Informe a nome: ");
+    leia(nome);
+    escreva("Informe a altura: ");
+    leia(altura);
+    //processamento
+    peso_ideal = k*altura-b;
+    //Saída de dados
+    escreva("O peso ideal de ",nome, " é ", peso_ideal);
+Fim
+
+Questão 6
+
+
+inicio
+    // declaração de variáveis 
+    inteiro: x, y, troca;
+    //entrada de dados
+    escreva("Informe o valor de x: ");
+    leia(x);
+    escreva("Informe o valor de y: ");
+    leia(y);
+    //processamento 
+    escreva("Valores de x e y antes da troca são: ", x," e ", y);
+    troca = x 
+    x = y
+    y = troca
+    //Saída de dados 
+    escreva(" \n Os valores de x e y depois da troca são: \n");
+    escreva("X é: ", x,"\n");
+    escreva("Y é: ", y);
+Fim
+
+Questão 7
+
+inicio
+    //declaração de variáveis 
+    real: raio, comprimento, diametro ,pi;
+    constante: real pi = 3.14;
+    //entradas de dados 
+    escreva("Digite o valor do raio da circunferência: ");
+    leia(raio);
+    //processamento 
+    const real diametro = 2 * raio;
+    const real comprimento= 2 * pi * raio;
+    const real area= pi* (raio * raio);
+   // saída de dados 
+   escreva("O diâmetro é: ", diametro, "\n");
+   escreva("A área é: ", area, "\n");
+   escreva("O comprimento é: ", comprimento, "\n");
+Fim
+
+Qustão 8
+
+inicio
+    // declaração de variáveis 
+    real:fahrenheit, grau_celsius;
+     //entrada de dados 
+    escreva("Qual a temperatura em graus celsius: ");
+    leia(grau_celsius);
+    //processamento 
+    fahrenheit = (grau_celsius * 1.8) + 32;
+    //saída de dados 
+    escreva("Temperatura em  celsius: \n",grau_celsius);
+    escreva("\nTemperatura transformada em fahrenheit: \n",fahrenheit);
+Fim
+
+Questão 9
+
+inicio
+   //declaração de variáveis 
+   inteiro: numero, centena, dezena, unidade, numero_invertido;
+  //entrada de dados 
+    escreva("Digite um número inteiro positivo de três dígitos: ");
+    leia(numero):
+
+    // Verifica se o número tem três dígitos
+    se (numero < 100 ou numero > 999);
+        escreva("Número inválido! Deve ter três dígitos.");
+    senao
+        // Separa os dígitos
+        centena = numero / 100;
+        dezena = (numero % 100) / 10;
+        unidade = numero % 10;
+
+        
+        numero_invertido = (unidade * 100) + (dezena * 10) + centena;
+
+        
+        escreva("Número lido: ", numero, "\n");
+        escreva("Número gerado (invertido): ", numero_invertido, "\n");
+Fim   
+
+
+
+  }
+}
+
+Questao 10 
+
+inicio
+       //declaração de variáveis 
+        real:premio_total, premio1, premio2, premio3;
+        //declaração de constante 
+        premio_total = 780000;
+       //processamento 
+        premio1 = premio_total * 0.46;
+        premio2 = premio_total * 0.32;
+        premio3 = premio_total - premio1 - premio2;
+       //saída de dados 
+        escreva("O primeiro ganhador recebera: R$ ", premio1, "\n");
+        escreva("O segundo ganhador recebera: R$ ", premio2, "\n");
+        escreva("O terceiro ganhador recebera: R$ ", premio3, "\n");
+Fim
