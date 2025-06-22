@@ -1,0 +1,201 @@
+Problema A
+Início
+    Escreva(“**********         *           *               *\n”)
+    Escreva(“*                            **             * *\n”)
+    Escreva(“*                           ****           *   *\n”)
+    Escreva(“*                          ******         *     *\n”)
+    Escreva(“*                         ********         *   *\n”)
+    Escreva(“*                                           * *\n”)
+    Escreva(“**********         *           *               *\n”)
+
+Fim
+Problema B
+Início
+    // Declaração de variáveis
+    Cadeia: nome, sobrenome, trocar
+
+    // Entrada de dados
+    Escreva(“Insira seu pré-nome: “)
+    Leia(nome)
+
+    Escreva(“Insira seu sobrenome: “)
+    Leia(sobrenome)
+
+    // Exibição antes da troca
+    Escreva(“É a vez do: “)
+    Escreva(nome, “ “, sobrenome)
+
+    Escreva(“\n”)
+
+    // Troca dos valores
+    trocar ← nome
+    nome ← sobrenome
+    sobrenome ← trocar
+
+    // Exibição após a troca
+    Escreva(nome, “ “, sobrenome)
+
+Fim
+Problema C
+Início
+    // Declaração de variáveis
+    Real: n1, n2, sm, sb, m, q
+    Inteiro: r
+
+    // Entrada de dados
+    Escreva(“CALCULADORA SIMPLES\n”)
+
+    Escreva(“Digite o 1º número: “)
+    Leia(n1)
+
+    Escreva(“Digite o 2º número: “)
+    Leia(n2)
+
+    // Processamento
+    sm ← n1 + n2
+    sb ← n1 - n2
+    m ← n1 * n2
+    r ← inteiro(n1) % inteiro(n2)
+    q ← n1 / n2
+
+    // Saída de dados
+    Escreva(“A soma = “, sm)
+    Escreva(“A subtração = “, sb)
+    Escreva(“A multiplicação = “, m)
+    Escreva(“O resto = “, r)
+    Escreva(“A divisão = “, q)
+
+Fim
+Problema D
+Início 
+   // Declaração de variáveis
+    Real: c, f
+
+    // Entrada de dados
+    Escreva(“Qual é a temperatura (em Celsius)? “)
+    Leia(c)
+
+    // Processamento
+    f ← c * (9 / 5) + 32
+
+    // Saída de dados
+    Escreva(“A conversão dela para Fahrenheit: “, f)
+
+Fim
+Problema E 
+Início
+    //Declaração de variáveis
+    Real: c, f
+
+    // Entrada de dados
+    Escreva(“Qual é a temperatura (em Fahrenheit)? “)
+    Leia(f)
+
+    // Processamento
+    c ← (f - 32) * 5 / 9
+
+    // Saída de dados
+    Escreva(“A conversão dela para Celsius: “, c)
+
+Fim
+Problema F
+Inicio
+    real: r, h, volume, volume_ml, PI
+
+    PI ← 3.14159
+
+    escreva(“Digite o raio: “)
+    leia(r)
+
+    escreva(“Digite a altura: “)
+    leia(h)
+
+    volume ← PI  pot(r, 2)  h
+    volume_ml ← volume * 1000
+
+    escreva(“O volume é: “, volume, “ litros\n”)
+    escreva(“Que corresponde a “, volume_ml, “ mililitros\n”)
+
+Fim
+
+Problema G
+Início
+    real: reais, euro, libras, dolar
+
+    escreva(“Quantos reais queres converter: “)
+    leia(reais)
+
+    euro ← reais / 6.40
+    libras ← reais / 7.53
+    dolar ← reais / 5.60
+
+    escreva(“\nDólar: “, dolar, “\nEuro: “, euro, “\nLibras: “, libras, “\n”)
+
+Fim
+
+Problema H
+Início
+    Real: reais, gastoUSD, gastoEUR, gastoGBP
+
+    reais ← 60000
+    gastoUSD ← 4095 * 5.60
+    gastoEUR ← 4500 * 6.40
+    gastoGBP ← 8500 * 7.53
+
+    Escreva(“SALDO QUANDO PARTIU DO BRASIL (EM REAIS): “, reais)
+    Escreva(“”)
+
+    reais ← reais - (gastoEUR + gastoGBP + gastoUSD)
+
+    Escreva(“SALDO QUANDO CHEGOU NO BRASIL (EM REAIS): “, reais)
+
+Fim
+
+Problema I
+Início 
+ cadeia: empresa, cnpj, rua, numero, bairro, estado, cidade, tel, email
+    inteiro: dia, mes, ano
+
+    empresa ← "Exemplo Ltda."
+    cnpj ← "12.345.678/0001-99"
+    rua ← "Rua das flores"
+    numero ← "123"
+    bairro ← "Centro"
+    estado ← "PI"
+    cidade ← "Água Branca"
+    tel ← "(86) 1234-5678"
+    email ← "contato@empresaexemplo.com.br"
+    dia ← 31
+    mes ← 5
+    ano ← 2025
+
+    escreva("                                                                       Empresa ", empresa, "                                                                \n")
+    escreva("                                                                        CNPJ: ", cnpj, "                                                                   \n")
+    escreva("                                                         ", rua, ", ", numero, " ", bairro, " ", cidade, "/", estado, "                                              \n")
+    escreva("                                                             Telefone: ", tel, " Email: ", email, "                                                                                         \n")
+    escreva("\n")
+    escreva("                                                                  Holerite de Orçamento                                                                   \n")
+    escreva("                                                                     Data: ", dia, "/", mes, "/", ano, "                                                              \n")
+
+    escreva("__________________________________________________________________________________________________________________________________________________________\n")
+    escreva("|________________________________________________________________________________________________________________________________________________________|\n")
+    escreva("|Descrição                                 |  Qtd  | Preço Unitário(R$)                                     | total R$                                   |\n")
+    escreva("|__________________________________________|_______|________________________________________________________|____________________________________________|\n")
+    escreva("|Notebook Lenovo IdeaPad 3                 |   1   |     3.200,00                                           | 3.200,00                                   |\n")
+    escreva("|Impressora HP LaserJet Pro                |   1   |     1.100,00                                           | 1.100,00                                   |\n")
+    escreva("|Pacote de Papel A4 500fls                 |   5   |        35,00                                           |    35,00                                   |\n")
+    escreva("|Licença MS Office 265(anual)              |   1   |       420,00                                           |   420,00                                   |\n")
+    escreva("|Serviço de Instalação de Software         |   1   |       150,00                                           |   150,00                                   |\n")
+    escreva("|__________________________________________|_______|________________________________________________________|____________________________________________|\n")
+    escreva("|                                                                                               total Geral:| 5.045,00                                   |\n")
+    escreva("|___________________________________________________________________________________________________________|____________________________________________|\n\n\n")
+
+    escreva("            Observações:\n")
+    escreva("             ° Orçamento válido por 10 dias úteis.\n")
+    escreva("             ° Valores sujeitos à disponibilidade em estoque.\n")
+    escreva("             ° Pagamento em via transferência bancária ou PIX.\n\n")
+
+    escreva("            Responsável pelo orçamento: João Silva Vendas Corporativas\n")
+    escreva("            Assinatura: _______________________________________________\n")
+
+Fim
