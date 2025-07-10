@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main(){
+  float raio,altura,volume,volume_ml;
+  
+printf("informe o raio \n");
+scanf("%f", &raio);
+
+printf("informe a altura \n");
+scanf("%f", &altura);
+
+volume= PI*raio*altura;
+volume_ml=volume * 1000;
+
+printf("o volume e %.2f \n",volume);
+printf("o volume em ML e %.2f \n", volume_ml);
+
+
+
+}
