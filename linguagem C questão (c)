@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+int a,b,soma,sub,divi,multi;
+
+printf ("informe o primeiro numero \n");
+scanf("%d", &a);
+printf("informe o segundo numero \n");
+scanf("%d", &b);
+
+soma= a+b;
+sub=a-b;
+divi=a/b;
+multi=a*b;
+
+printf("a soma e : %d \n", soma);
+printf("a subtracao e : %d \n", sub);
+printf("a divisao e: %d \n", divi);
+printf("a multiplicacao e : %d \n", multi);
+    
+}
