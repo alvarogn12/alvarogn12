@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+   float c,f;
+   
+   printf("quala temperatura em graus fahrenheit \n");
+   scanf("%f", &f);
+   
+    c =(f - 32) * 5 / 9;
+    
+    printf("a tranformacao de fahrenheit para celsius e : %.2f",c);
+    
+}
